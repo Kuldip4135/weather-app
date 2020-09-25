@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #ffff;
+}
+
+.app__form {
+  padding: 20px;
+  background: linear-gradient(#0f0c29, #302b63, #24243e);
+  min-height: 40vh;
+  width: 25rem;
+  position: relative;
+  border-radius: 0.7rem;
+}
+
+.app__form > input {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 0.7rem 0.7rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.app__form > input:focus,
+.app__form > input:active {
+  outline: none;
+}
+
+.weather {
+  text-align: center;
+}
+
+.weather h1 {
+  margin-top: 2rem;
+}
+
+.weather h2 {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather small {
+  font-size: 1.3rem;
+}
+
+.weather h4 {
+  text-transform: capitalize;
+}
+
+@media (max-width: 428px) {
+  .app__form {
+    width: 18rem;
+  }
+}
